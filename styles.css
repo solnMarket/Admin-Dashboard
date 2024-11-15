@@ -1,0 +1,120 @@
+@font-face {
+    font-family: montserrat;
+    src: url(fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: opensans;
+    src: url(fonts/Open/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,body, .wrapper
+{
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.header{
+    grid-column: 2/3;
+    grid-row:1; 
+    background-color:#F28D52;
+}
+.sidebar{
+    grid-column: 1;
+    grid-row: 1/4;
+    background-color: #2596be;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.main-content{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: #F2DCC2;
+}
+
+.sidebar-wrapper{
+    padding-top: 10%;
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+div svg{
+    fill: white;
+    height: 35px;
+    width: 35px;
+}
+
+.sidebar-wrapper h3, .sidebar-wrapper p{
+    color: white;
+}
+
+.user-functions{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    row-gap: 20px;
+}
+
+.user-support{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+}
+
+
+.user-functions div{
+    display: flex;
+    gap: 8px;
+    justify-items: center;
+    align-items: center;
+}
+
+.user-support div{
+    
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.user-functions{
+    position: relative;
+    top: 35px;
+}
+
+.user-support{
+    position: relative;
+    top: 70px;
+}
+
+.sidebar-wrapper{
+    font-family: Montserrat;
+}
+
+.Dashboard{
+    display: flex;
+    gap: 15px;
+}
+
+.Dashboard svg{
+    height: 50px;
+    width: 50px;
+}
